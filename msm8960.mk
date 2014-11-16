@@ -182,6 +182,11 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     ueventd.qcom.rc
 
+# d2dcm ramdisk
+PRODUCT_COPY_FILES += \
+    device/samsung/msm8960-common/etc/rootdir/sbin/felica_init.sh:root/sbin/felica_init.sh \
+    device/samsung/msm8960-common/etc/rootdir/init.carrier.rc:root/init.carrier.rc
+
 # Thermal
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermald-8960.conf:system/etc/thermald-8960.conf
