@@ -480,9 +480,9 @@ on post-fs-data
     chown radio system /sys/class/lcd/panel/temperature
 
     # permissions for NFC
-    setprop ro.nfc.port "I2C"
-    chmod 0600 /dev/pn544
-    chown nfc nfc /dev/pn544
+#    setprop ro.nfc.port "I2C"
+#    chmod 0600 /dev/pn544
+#    chown nfc nfc /dev/pn544
 
     # permission for CHARGING
     chown system radio /sys/class/power_supply/battery/batt_reset_soc
