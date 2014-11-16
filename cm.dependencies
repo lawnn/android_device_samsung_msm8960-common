@@ -4,7 +4,7 @@
     "target_path": "device/samsung/qcom-common"
   },
   {
-    "repository": "android_kernel_samsung_d2",
-    "target_path": "kernel/samsung/d2"
+    "repository": "android_kernel_samsung_d2dcm",
+    "target_path": "kernel/samsung/d2dcm"
   }
 ]
