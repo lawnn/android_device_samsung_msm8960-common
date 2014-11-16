@@ -7,4 +7,8 @@
     "repository": "android_kernel_samsung_d2dcm",
     "target_path": "kernel/samsung/d2dcm"
   }
+{
+    "repository": "proprietary_vendor_samsung",
+    "target_path": "vendor/samsung"
+  }
 ]
