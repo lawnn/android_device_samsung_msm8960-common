@@ -184,9 +184,9 @@ PRODUCT_PACKAGES += \
 
 # d2dcm ramdisk
 PRODUCT_COPY_FILES += \
-    device/samsung/msm8960-common/etc/rootdir/sbin/felica_init.sh:root/sbin/felica_init.sh \
-    device/samsung/msm8960-common/etc/rootdir/init.carrier.rc:root/init.carrier.rc
-    device/samsung/msm8960-common/etc/rootdir/etc/twrp.fstab:recovery/root/etc/twrp.fstab
+    device/samsung/msm8960-common/rootdir/etc/sbin/felica_init.sh:root/sbin/felica_init.sh \
+    device/samsung/msm8960-common/rootdir/etc/init.carrier.rc:root/init.carrier.rc
+    device/samsung/msm8960-common/rootdir/etc/twrp.fstab:recovery/root/etc/twrp.fstab
 
 # Thermal
 PRODUCT_COPY_FILES += \
