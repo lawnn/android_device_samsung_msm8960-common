@@ -27,7 +27,7 @@ BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 zcache
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01500000
 BOARD_KERNEL_PAGESIZE := 2048
-TARGET_KERNEL_SOURCE := kernel/samsung/d2
+TARGET_KERNEL_SOURCE := kernel/samsung/d2dcm
 
 # Audio
 BOARD_USES_ALSA_AUDIO := true
