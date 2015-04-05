@@ -4,3 +4,4 @@ type panel_dev, dev_type;
 type power_dev, dev_type;
 type rfkill_device, dev_type;
 type timerirq_dev, dev_type;
+type felica_device, dev_type;
