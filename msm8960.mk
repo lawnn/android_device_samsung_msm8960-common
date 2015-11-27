@@ -52,10 +52,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:system/etc/media_codecs_google_video_le.xml
 
-# System Properties
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp
-
 PRODUCT_PROPERTY_OVERRIDES += \
     qcom.hw.aac.encoder=true \
     ro.config.vc_call_vol_steps=10
@@ -162,6 +158,7 @@ PRODUCT_COPY_FILES += \
 # OMX
 PRODUCT_PACKAGES += \
     libdashplayer \
+    libOmxCore \
     libOmxVdec \
     libOmxVenc \
     libOmxAacEnc \
@@ -187,13 +184,22 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     ueventd.qcom.rc
 
+# Samsung symbols
+PRODUCT_PACKAGES += \
+    libsamsung_symbols
+
+# Stlport
+PRODUCT_PACKAGES += \
+    libstlport
+
 # USB
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
 
 # ART
 PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.dex2oat-flags=--no-watch-dog
+    dalvik.vm.dex2oat-flags=--no-watch-dog \
+    dalvik.vm.dex2oat-swap=false
 
 # Wifi
 PRODUCT_PACKAGES += \
